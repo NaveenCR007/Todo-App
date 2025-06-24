@@ -20,7 +20,7 @@ const Tasks = ({ onClose, onAddTo, editItem }) => {
         <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div className='w-full max-w-xl p-8 rounded-2xl bg-white shadow-2xl relative'>
                 <div onClick={onClose} className="absolute top-2 right-5 cursor-pointer">
-                    <img src="/images/tabler-x-icon.png" alt="Close" className="w-5 h-5" />
+                    <img src="./tabler-x-icon.png" alt="Close" className="w-5 h-5" />
                 </div>
 
                 <div className='flex flex-col space-y-4 items-center'>

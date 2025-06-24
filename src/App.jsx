@@ -85,20 +85,20 @@ function App() {
         </div>
 
         <div className="task-container h-96 overflow-y-auto">
-          {todo.length === 0 && <div className="w-70 m-auto bg-[url('/images/sleep.webp')] h-70 bg-center bg-contain"></div>}
+          {todo.length === 0 && <div className="w-70 m-auto bg-[url('./sleep.webp')] h-70 bg-center bg-contain"></div>}
 
           {todo.map((item) => (
             <div key={item.id} className="real-task flex justify-between items-center my-2 rounded-lg shadow-2xl bg-blue-200 h-15 max-w-4xl m-auto">
               <div className="desc mx-10">{item.todo}</div>
               <div className="task-icons flex mx-10 gap-2">
                 <div onClick={() => handleDelete(item.id)} className="done w-8 h-8 hover:bg-gray-200 rounded-full cursor-pointer">
-                  <img className='w-6 h-6 mx-auto my-1' src="/images/wired-outline-37-approve-checked-simple-hover-wobble.gif" alt="" />
+                  <img className='w-6 h-6 mx-auto my-1' src="./wired-outline-37-approve-checked-simple-hover-wobble.gif" alt="" />
                 </div>
                 <div onClick={() => handleEdit(item.id)} className="edit w-8 h-8 hover:bg-gray-200 rounded-full cursor-pointer">
-                  <img className='w-6 h-6 mx-auto my-1' src="/images/wired-outline-35-edit-hover-circle (1).gif" alt="" />
+                  <img className='w-6 h-6 mx-auto my-1' src="./wired-outline-35-edit-hover-circle (1).gif" alt="" />
                 </div>
                 <div onClick={() => handleDelete(item.id)} className="delete w-8 h-8 hover:bg-gray-200 rounded-full cursor-pointer">
-                  <img className='w-6 h-6 mx-auto my-1' src="/images/wired-outline-185-trash-bin-hover-empty.gif" alt="" />
+                  <img className='w-6 h-6 mx-auto my-1' src="./wired-outline-185-trash-bin-hover-empty.gif" alt="" />
                 </div>
               </div>
             </div>
